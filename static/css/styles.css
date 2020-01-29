@@ -1,3 +1,24 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Manrope VF";
+  src: url("/fonts/ManropeGX.ttf") format("truetype-variations");
+  font-style: normal;
+  font-weight: 200 800; }
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Bold.woff2") format("woff2"),
+  url("/fonts/Manrope-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope-Regular.woff2") format("woff2"),
+  url("/fonts/Manrope-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
 :root {
     --main-color: purple;
 }
@@ -6,7 +27,7 @@ body { color: var(--body-text-color); background-color: var(--background-color);
 .main-color { color: var(--main-color); }
 .secondary-color { color: var(--secondary-color); }
 .bg-main-color { background-color: var(--main-color); color: var(--logo-text-color); }
-.heading-font, .global-font { font-family: "Source Sans Pro"; }
+.heading-font, .global-font { font-family: "Manrope"; }
 .heading-color { color: var(--heading-text-color); }
 .post-content a, .list-pages a, .pagination a {
     border-bottom: 1px solid rgba(0,0,0,0.4);
@@ -123,3 +144,14 @@ table tr th, table tr td {
     margin:0;
     padding:6px 13px;
 }
+
+body, html {
+  font-family: 'Manrope VF', Manrope, sans-serif;
+  font-weight: 500;
+  font-variation-settings: 'wght' 500;
+  font-variation-ligatures: normal;
+  font-feature-settings:'calt', 'liga'; }
+*,*:before,*:after {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
